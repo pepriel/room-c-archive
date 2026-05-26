@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ministry Records</title>
+</head>
+<body style="background:#050505;color:#cfcfcf;font-family:Courier New;padding:50px;">
+
+<script>
+function checkPassword(){
+    var password = document.getElementById("password").value.toLowerCase();
+
+    if(password === "weststairwell"){
+        window.location.href = "sublevel.html";
+    } else {
+        document.getElementById("error").innerHTML = "ACCESS DENIED";
+    }
+}
+</script>
+
+<h1>MINISTRY RECORDS</h1>
+
+<p>The Ministry formally denied the existence of Room C in 1999.</p>
+
+<p>Multiple Hogwarts staff members reported hearing voices beneath the library after curfew.</p>
+
+<p style="color:#b74b4b;">
+Do not allow portraits to observe prolonged corridor exposure.
+</p>
+
+<p>Subject R.M. disappeared after entering Sublevel C.</p>
+
+<p style="color:#050505;">
+the portraits watched the west stairwell first
+</p>
+
+<hr>
+
+<h2>RESTRICTED SUBLEVEL ACCESS</h2>
+
+<input type="password" id="password" placeholder="ACCESS PHRASE">
+
+<button onclick="checkPassword()">ENTER</button>
+
+<p id="error"></p>
+
+</body>
+</html>
